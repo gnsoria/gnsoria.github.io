@@ -1,0 +1,35 @@
+:root {
+    --primary: 146, 115, 178;
+    --secondary: 210, 162, 118;
+    --info: 178, 159, 135;
+    --success: 91, 149, 104;
+    --background: 56, 42, 77;
+    --white: 255, 255, 255;
+    --light: 247, 246, 246;
+    --dark: 64, 47, 89;
+}
+
+.scheme-light {
+    color: rgb(var(--dark));
+    background-color: rgb(var(--light));
+}
+
+.scheme-dark {
+    color: rgb(var(--light));
+    background-color: rgb(var(--background));
+}
+
+.text-brown {
+    color: rgb(var(--secondary));
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    height: 100vh;
+}
