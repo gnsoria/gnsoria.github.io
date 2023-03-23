@@ -9,6 +9,11 @@
     --dark: 64, 47, 89;
 }
 
+body {
+    background-color: rgb(var(--background));
+    margin-bottom: 10vh;
+}
+
 .scheme-light {
     color: rgb(var(--dark));
     background-color: rgb(var(--light));
@@ -19,8 +24,16 @@
     background-color: rgb(var(--background));
 }
 
-.text-brown {
-    color: rgb(var(--secondary));
+.scheme-dark header {
+    color: rgb(var(--secondary))
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+section {
+    padding: 1rem;
 }
 
 .intro {
@@ -28,8 +41,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding: 1rem;
-
     height: 100vh;
+}
+
+.intro > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-img {
+    max-height: 50vh;
+    border-radius: 1rem;
 }
