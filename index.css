@@ -62,7 +62,7 @@ section {
 }
 
 .directions {
-    border-bottom: 1px dotted black;
+    border-bottom: 1px solid var(--dark);
     padding-top: 1rem;
     padding-bottom: 1rem;
     align-self: flex-end;
@@ -88,6 +88,6 @@ section {
     }
 
     .directions:nth-of-type(even) {
-        border-left: 1px dotted black;
+        border-left: 1px solid var(--dark);
     }
 }
