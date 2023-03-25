@@ -60,3 +60,12 @@ section {
         opacity: 1;
     }
 }
+
+.direction-links {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    list-style: none;
+    border-bottom: 1px dotted black;
+    padding-bottom: 0.5rem;
+}
