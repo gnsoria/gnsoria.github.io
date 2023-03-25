@@ -61,18 +61,22 @@ section {
     }
 }
 
-.direction-links {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 0;
-    list-style: none;
+.directions {
     border-bottom: 1px dotted black;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    align-self: flex-end;
 }
 
 @media only screen and (min-width: 992px) {
-    .direction-links {
+    .directions {
         border-bottom: 0px;
         padding-bottom: 0;
+
+    }
+
+    .directions:nth-of-type(2) {
+        border-right: 1px dotted black;
+        border-left: 1px dotted black;
     }
 }
