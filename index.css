@@ -69,3 +69,10 @@ section {
     border-bottom: 1px dotted black;
     padding-bottom: 0.5rem;
 }
+
+@media only screen and (min-width: 992px) {
+    .direction-links {
+        border-bottom: 0px;
+        padding-bottom: 0;
+    }
+}
