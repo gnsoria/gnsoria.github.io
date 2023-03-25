@@ -63,26 +63,31 @@ section {
 
 .directions {
     border-bottom: 1px dotted black;
+    padding-top: 1rem;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
     align-self: flex-end;
 }
 
-.directions:last-of-type {
-    border-bottom: 0px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+.directions > p {
+    height: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .directions:first-of-type {
+        padding-top: 0;
+    }
+
+    .directions:last-of-type {
+        border-bottom: 0px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
-    .directions {
+    .directions:nth-last-of-type(-n+2) {
         border-bottom: 0px;
-        padding-bottom: 0;
-        margin-bottom: 0;
     }
 
-    .directions:nth-of-type(2) {
-        border-right: 1px dotted black;
+    .directions:nth-of-type(even) {
         border-left: 1px dotted black;
     }
 }

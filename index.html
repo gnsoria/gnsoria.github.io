@@ -67,14 +67,18 @@
                     <p>
                         The funeral will begin with mass at at Church of the Presentation of the Blessed Virgin Mary, 10am on Thursday April 13th, followed by burial at San Joaquin Catholic Cemetary.
                     </p>
+                    <p>
+                        After the funeral, a reception will be held at China Palace Restaurant.
+                    </p>
                 </div>
 
                 <section id="directions">
-                    <div class="row row-cols-1 row-cols-md-3">
+                    <h3>Directions</h3>
+                    <div class="row row-cols-1 row-cols-md-2">
                         <div class="col directions">
-                            <h3>
+                            <h4>
                                 DeYoung Shoreline Funeral Home
-                            </h3>
+                            </h4>
                             <p>
                                 7676 Shoreline Dr, Stockton, CA 95219
                                 <a id="funeral-home-address-copy" href="#">
@@ -99,9 +103,9 @@
                             </div>
                         </div>
                         <div class="col directions">
-                            <h3>
+                            <h4>
                                 Church of the Presentation of the Blessed Virgin Mary
-                            </h3>
+                            </h4>
                             <p>
                                 1515 W Benjamin Holt Dr, Stockton, CA 95207
                                 <a id="church-address-copy" href="#">
@@ -126,9 +130,9 @@
                             </div>
                         </div>
                         <div class="col directions">
-                            <h3>
+                            <h4>
                                 San Joaquin Catholic Cemetary
-                            </h3>
+                            </h4>
                             <p>
                                 719 E Harding Way, Stockton, CA 95201
                                 <a id="cemetary-address-copy" href="#">
@@ -145,6 +149,33 @@
                                 </a>
                                 <a
                                     href="https://goo.gl/maps/EgboaLQhQ794mxyd6"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                >
+                                    Google Maps
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col directions">
+                            <h4>
+                                China Palace Restaurant
+                            </h4>
+                            <p>
+                                5052 W Ln, Ste C, Stockton, CA 95210
+                                <a id="reception-address-copy" href="#">
+                                    (copy address)
+                                </a>
+                            </p>
+                            <div class="d-flex justify-content-around">
+                                <a
+                                    href="https://maps.apple.com/?address=5052%20N%20West%20Ln,%20Stockton,%20CA%20%2095210,%20United%20States&auid=11492270672924310283&ll=38.000614,-121.288581&lsp=9902&q=China%20Palace%20Restaurant"
+                                    target="_blank"
+                                    class="btn btn-primary"
+                                >
+                                    Apple Maps
+                                </a>
+                                <a
+                                    href="https://goo.gl/maps/MswjgbgZ5rGAJZHt7"
                                     target="_blank"
                                     class="btn btn-primary"
                                 >
@@ -178,6 +209,11 @@
     $("#cemetary-address-copy").click(function(event) {
         event.preventDefault()
         navigator.clipboard.writeText("719 E Harding Way, Stockton, CA 95201")
+    })
+
+    $("#reception-address-copy").click(function(event) {
+        event.preventDefault()
+        navigator.clipboard.writeText("5052 W Ln, Ste C, Stockton, CA 95210")
     })
 
 </script>
