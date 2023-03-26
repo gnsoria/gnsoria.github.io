@@ -1,5 +1,6 @@
 body {
     margin-bottom: 10vh;
+    background-color: var(--dark);
 }
 
 h1,
@@ -25,6 +26,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: var(--dark);
 }
 
 .intro h1 {
@@ -120,6 +122,8 @@ section {
     
     .intro {
         height: auto;
+        color: black !important;
+        background-color: white !important;
     }
 
     .intro h1,
@@ -135,7 +139,8 @@ section {
     }
 
     .directions {
-        border-bottom: 1px solid var(--dark);
+        border-bottom: 0px;
+        border-left: 0px;
         padding-top: auto;
         padding-bottom: auto;
         align-self: flex-end;
