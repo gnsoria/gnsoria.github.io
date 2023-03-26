@@ -15,6 +15,10 @@ section {
     padding: 1rem;
 }
 
+.view-online-note {
+    display: none;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -72,6 +76,11 @@ section {
     height: 3rem;
 }
 
+.direction-map-links {
+    display: flex;
+    justify-content: space-around;
+}
+
 @media only screen and (max-width: 992px) {
     .directions:first-of-type {
         padding-top: 0;
@@ -89,5 +98,71 @@ section {
 
     .directions:nth-of-type(even) {
         border-left: 1px solid var(--dark);
+    }
+}
+
+@media print {
+    body {
+        color: black !important;
+        background-color: white !important;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    .view-online-note {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    .intro {
+        height: auto;
+    }
+
+    .intro h1,
+    .intro h2,
+    .dates {
+        color: black;
+        opacity: 1;
+        animation: "";
+    }
+
+    .intro-img {
+        height: 25vh;
+    }
+
+    .directions {
+        border-bottom: 1px solid var(--dark);
+        padding-top: auto;
+        padding-bottom: auto;
+        align-self: flex-end;
+    }
+    
+    .directions > p {
+        height: 1rem;
+    }
+
+    .direction-map-links {
+        display: none;
+    }
+
+    .address {
+        text-align: center;
+    }
+
+    .address > a {
+        display: none;
+    }
+
+    .dignity-memorial {
+        font-size: 0;
+    }
+
+    .dignity-memorial::after {
+        font-size: 1rem;
+        content: "https://www.dignitymemorial.com/obituaries/stockton-ca/victoriana-soria-11218526";
     }
 }
