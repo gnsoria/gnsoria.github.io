@@ -55,9 +55,8 @@
                 </p>
                 <p>
                     If you'd like to attend any of these, either in-person in Stockton or remotely via Zoom or Facebook, please send an email to
-                    <a href="mailto:mama@victoriasoria.com">
-                        mama@victoriasoria.com
-                    </a> for details.
+                    <a href="mailto:mama@victoriasoria.com" class="underline">
+                        mama@victoriasoria.com</a> for details.
                 </p>
             </div>
         </section>
@@ -68,7 +67,7 @@
             <div>
                 <div>
                     <p>
-                        The visitation will be held at DeYoung Shoreline Funeral Home from 2pm-7pm on Wednesday, April 12th.
+                        The visitation will be held at DeYoung Shoreline Funeral Home from 2pm-7pm on Wednesday, April 12th. This will include a rosary beginning at 5pm.
                     </p>
                     <p>
                         The funeral will begin with Mass at Church of the Presentation of the Blessed Virgin Mary, at 10am on Thursday April 13th, followed by burial at San Joaquin Catholic Cemetary.
@@ -89,6 +88,13 @@
                                 7676 Shoreline Dr, Stockton, CA 95219
                                 <a id="funeral-home-address-copy" href="#">
                                     (copy address)
+                                    <span
+                                        id="copy-confirmation"
+                                        class="text-success"
+                                        style="display: none;"
+                                    >
+                                        ☑
+                                    </span>
                                 </a>
                             </p>
                             <div class="direction-map-links">
@@ -116,6 +122,13 @@
                                 1515 W Benjamin Holt Dr, Stockton, CA 95207
                                 <a id="church-address-copy" href="#">
                                     (copy address)
+                                    <span
+                                        id="copy-confirmation"
+                                        class="text-success"
+                                        style="display: none;"
+                                    >
+                                        ☑
+                                    </span>
                                 </a>
                             </p>
                             <div class="direction-map-links">
@@ -143,6 +156,13 @@
                                 719 E Harding Way, Stockton, CA 95201
                                 <a id="cemetary-address-copy" href="#">
                                     (copy address)
+                                    <span
+                                        id="copy-confirmation"
+                                        class="text-success"
+                                        style="display: none;"
+                                    >
+                                        ☑
+                                    </span>
                                 </a>
                             </p>
                             <div class="direction-map-links">
@@ -170,6 +190,13 @@
                                 5052 W Ln, Ste C, Stockton, CA 95210
                                 <a id="reception-address-copy" href="#">
                                     (copy address)
+                                    <span
+                                        id="copy-confirmation"
+                                        class="text-success"
+                                        style="display: none;"
+                                    >
+                                        ☑
+                                    </span>
                                 </a>
                             </p>
                             <div class="direction-map-links">
@@ -224,21 +251,41 @@
     $("#funeral-home-address-copy").click(function(event) {
         event.preventDefault()
         navigator.clipboard.writeText("7676 Shoreline Dr, Stockton, CA 95219")
+        const confirmation = $(this).find("#copy-confirmation")
+        confirmation.css("display", "inline")
+        setTimeout(function() {
+            confirmation.css("display", "none")
+        }, 750)
     })
 
     $("#church-address-copy").click(function(event) {
         event.preventDefault()
         navigator.clipboard.writeText("1515 W Benjamin Holt Dr, Stockton, CA 95207")
+        const confirmation = $(this).find("#copy-confirmation")
+        confirmation.css("display", "inline")
+        setTimeout(function() {
+            confirmation.css("display", "none")
+        }, 750)
     })
 
     $("#cemetary-address-copy").click(function(event) {
         event.preventDefault()
         navigator.clipboard.writeText("719 E Harding Way, Stockton, CA 95201")
+        const confirmation = $(this).find("#copy-confirmation")
+        confirmation.css("display", "inline")
+        setTimeout(function() {
+            confirmation.css("display", "none")
+        }, 750)
     })
 
     $("#reception-address-copy").click(function(event) {
         event.preventDefault()
         navigator.clipboard.writeText("5052 W Ln, Ste C, Stockton, CA 95210")
+        const confirmation = $(this).find("#copy-confirmation")
+        confirmation.css("display", "inline")
+        setTimeout(function() {
+            confirmation.css("display", "none")
+        }, 750)
     })
 
 </script>
