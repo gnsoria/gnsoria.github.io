@@ -72,14 +72,10 @@ a.underline {
 }
 
 .directions {
-    border-bottom: 1px solid var(--dark);
+    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     align-self: flex-end;
-}
-
-.directions>p {
-    height: 3rem;
 }
 
 .direction-map-links {
@@ -87,23 +83,10 @@ a.underline {
     justify-content: space-around;
 }
 
-@media only screen and (max-width: 992px) {
-    .directions:first-of-type {
-        padding-top: 0;
-    }
-
-    .directions:last-of-type {
-        border-bottom: 0px;
-    }
-}
 
 @media only screen and (min-width: 992px) {
-    .directions:nth-last-of-type(-n+2) {
-        border-bottom: 0px;
-    }
-
-    .directions:nth-of-type(even) {
-        border-left: 1px solid var(--dark);
+    .directions {
+        width: 50%;
     }
 }
 
